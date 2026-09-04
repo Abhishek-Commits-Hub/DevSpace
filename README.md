@@ -41,7 +41,7 @@ DevSpace/
 └── script.js
 ```
 
-## How to Run
+## How to Run Locally
 
 No installation or setup is required.
 
@@ -49,7 +49,15 @@ No installation or setup is required.
 2. Open `index.html` in a browser.
 3. Start using the website.
 
-For the best development experience, the project can also be opened using VS Code with the Live Server extension.
+For development, the project can also be opened using VS Code with the Live Server extension.
+
+## Deployment
+
+The website is deployed using **GitHub Pages**.
+
+The live website is available here:
+
+**[DevSpace — Live Website](https://abhishek-commits-hub.github.io/DevSpace/)**
 
 ## What I Practiced
 
@@ -67,7 +75,7 @@ This project helped me work with:
 
 ## Author
 
-**Abhishek Dutta**
+**Abhishek Kumar Dutta**
 
 B.Tech CSE Student | Web Developer
 
