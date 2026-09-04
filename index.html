@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DevSpace | Abhishek Kumar Dutta</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="#home" class="logo">DevSpace</a>
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#tasks">Task Manager</a>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">CSE Developer • Web Developer</p>
+        <h1>Hi, I'm <span>Abhishek Kumar Dutta</span></h1>
+        <p>I build interactive, responsive and practical web applications using modern frontend technologies.</p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn">View Projects</a>
+          <a href="#tasks" class="btn btn-secondary">Open Dashboard</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">About Me</p>
+        <h2>Building useful digital experiences</h2>
+      </div>
+      <div class="about-content">
+        <p>I'm a Computer Science and Engineering student interested in web development, problem solving and building
+          real-world projects.</p>
+        <div class="skills">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+          <span>Git</span>
+          <span>GitHub</span>
+          <span>Responsive Design</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Portfolio</p>
+        <h2>My Projects</h2>
+      </div>
+      <div class="project-grid">
+        <article class="project-card">
+          <h3>LeetMetric</h3>
+          <p>Interactive coding dashboard to track and visualize LeetCode progress and statistics.</p>
+          <span>JavaScript • API</span>
+          <div class="project-buttons">
+            <a href="https://abhishek-commits-hub.github.io/LeetMetric/" target="_blank" class="project-btn">Website
+              ↗</a>
+            <a href="https://github.com/abhishek-commits-hub/LeetMetric" target="_blank"
+              class="project-btn github-btn">GitHub ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <h3>Weather Quiz Dashboard</h3>
+          <p>Interactive dashboard combining live weather data with an engaging weather-based quiz experience.</p>
+          <span>API • JavaScript • Quiz</span>
+          <div class="project-buttons">
+            <a href="https://abhishek-commits-hub.github.io/Weather-Quiz-Dashboard/" target="_blank"
+              class="project-btn">Website ↗</a>
+            <a href="https://github.com/abhishek-commits-hub/Weather-Quiz-Dashboard" target="_blank"
+              class="project-btn github-btn">GitHub ↗</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <h3>CareerConnect</h3>
+          <p>A professional career platform helping users explore job opportunities and submit applications easily.</p>
+          <span>HTML • CSS • JavaScript</span>
+          <div class="project-buttons">
+            <a href="https://abhishek-commits-hub.github.io/Career-Connect/" target="_blank" class="project-btn">Website
+              ↗</a>
+            <a href="https://github.com/abhishek-commits-hub/Career-Connect" target="_blank"
+              class="project-btn github-btn">GitHub ↗</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="tasks" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Productivity</p>
+        <h2>Task Manager</h2>
+      </div>
+      <div class="task-app">
+        <div class="task-input">
+          <input type="text" id="taskInput" placeholder="Enter a task...">
+          <button id="addTaskBtn" class="btn">Add Task</button>
+        </div>
+        <div class="task-controls">
+          <input type="text" id="taskSearch" placeholder="Search tasks...">
+          <select id="taskFilter">
+            <option value="all">All Tasks</option>
+            <option value="active">Active</option>
+            <option value="completed">Completed</option>
+          </select>
+        </div>
+        <div id="taskList" class="task-list"></div>
+        <div class="task-stats">
+          <span>Total: <strong id="totalTasks">0</strong></span>
+          <span>Completed: <strong id="completedTasks">0</strong></span>
+          <span>Active: <strong id="activeTasks">0</strong></span>
+        </div>
+      </div>
+    </section>
+
+    <section id="products" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Explore</p>
+        <h2>Product Explorer</h2>
+      </div>
+      <div class="product-controls">
+        <input type="text" id="productSearch" placeholder="Search products...">
+        <select id="categoryFilter">
+          <option value="all">All Categories</option>
+          <option value="laptop">Laptops</option>
+          <option value="phone">Phones</option>
+          <option value="accessory">Accessories</option>
+        </select>
+        <select id="sortProducts">
+          <option value="default" selected disabled>Sort Products</option>
+          <option value="price-low">Price: Low to High</option>
+          <option value="price-high">Price: High to Low</option>
+          <option value="rating-high">Rating: High to Low</option>
+          <option value="name">Name: A-Z</option>
+        </select>
+      </div>
+      <div id="productList" class="product-grid"></div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Contact</p>
+        <h2>Let's Connect</h2>
+      </div>
+      <form id="contactForm" class="contact-form">
+        <input type="text" id="contactName" placeholder="Your Name" required>
+        <input type="email" id="contactEmail" placeholder="Your Email" required>
+        <textarea id="contactMessage" placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Abhishek Kumar Dutta. Built with HTML, CSS & JavaScript.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
